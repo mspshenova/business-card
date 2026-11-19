@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+}
+
+
+
+.main {
+    width: 450px;
+    height: 250px;
+    background-color: burlywood;
+    display: flex;
+    border-radius: 25px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;       /* высота минимум во весь экран */
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background-image: url(img/photo.jpg);
+    border-radius: 50px;
+    background-size: cover;      /* масштабирует фото под размер блока */
+    background-position: top center; /* центрирует (для верхнего центра пиши: top center) */
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    margin-left: 15%;
+}
+
+.social {
+    display: flex;
+    margin-top: 2%;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.social_button {
+    display: inline-block;
+    padding: 10px 20px;    /* внутренние отступы: 10px сверху/снизу, 20px по бокам */
+    text-decoration: none;     /* убирает подчеркивание */
+    border-radius: 10px;        /* скругление углов */
+    background-color: rgb(78, 38, 9);
+    color: #ffffff;            /* цвет текста */
+    text-align: center;
+    margin-top: 10%;
+    transition: background-color 0.2s ease; /* плавная смена цвета при наведении */
+}
+
+.social_button:hover {
+  background-color: #45580c; /* цвет при наведении курсора */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+
+.about_txt {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+}
